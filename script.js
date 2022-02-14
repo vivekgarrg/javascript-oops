@@ -43,8 +43,8 @@ document.getElementById('post').addEventListener('click',()=>
   let blog = new Blog(val1,val2);
   blog.addTitle();
   blog.addDescription();
-
-//   let img = document.createElement('img');
-//   img.src = './assets/javascript.png';
-//   document.getElementById('flashcard').appendChild(img);
+  var image = document.createElement('img');
+  image.src = './assets/javascript.png';
+  var newchild = document.getElementById('flashcard')
+  newchild.insertBefore(image, newchild.childNodes[0]);
 })
